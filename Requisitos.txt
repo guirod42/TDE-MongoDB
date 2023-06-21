@@ -1,0 +1,9 @@
+Requisitos do Projeto:
+- Apresentar um exemplo e explicar como os dados são manipulados.
+- Apresentar o projeto com suas funcionalidades e características.
+- Explicar o projeto e comparar com banco de dados SQL.
+- O grupo deve ter no máximo 2 participantes.
+- Cada grupo terá 15 minutos para apresentar.
+- Apresentar quais as principais aplicações para o banco de dados.
+- A apresentação deve ser enviada como entrega do trabalho, pode ser uma gravação.
+- O Projeto deve estar funcional, ou seja, apresentar um exemplo real utilizando o banco de dados.

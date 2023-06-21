@@ -1,0 +1,191 @@
+[
+  {
+	"PessoaID": 1,
+    "nome": "João Silva",
+    "idade": 30,
+    "email": "joao.silva@example.com",
+    "cpf": "123.456.789-00",
+    "data_nascimento": "1993-06-20",
+    "data_criacao": "2023-06-20T10:30:00Z"
+  },
+  {
+	"PessoaID": 2,
+    "nome": "Maria Santos",
+    "idade": 25,
+    "email": "maria.santos@example.com",
+    "cpf": "987.654.321-00",
+    "data_nascimento": "1998-06-19",
+    "data_criacao": "2023-06-19T15:45:00Z"
+  },
+  {
+	"PessoaID": 3,
+    "nome": "Pedro Oliveira",
+    "idade": 35,
+    "email": "pedro.oliveira@example.com",
+    "cpf": "567.890.123-00",
+    "data_nascimento": "1988-06-18",
+    "data_criacao": "2023-06-18T09:00:00Z"
+  },
+  {
+	"PessoaID": 4,
+    "nome": "Ana Costa",
+    "idade": 28,
+    "email": "ana.costa@example.com",
+    "cpf": "111.222.333-44",
+    "data_nascimento": "1995-03-12",
+    "data_criacao": "2023-06-17T14:15:00Z"
+  },
+  {
+	"PessoaID": 5,
+    "nome": "Rafael Santos",
+    "idade": 33,
+    "email": "rafael.santos@example.com",
+    "cpf": "555.666.777-88",
+    "data_nascimento": "1990-09-05",
+    "data_criacao": "2023-06-16T11:30:00Z"
+  },
+  {
+	"PessoaID": 6,
+    "nome": "Camila Lima",
+    "idade": 24,
+    "email": "camila.lima@example.com",
+    "cpf": "999.888.777-66",
+    "data_nascimento": "1999-11-28",
+    "data_criacao": "2023-06-15T13:45:00Z"
+  },
+  {
+	"PessoaID": 7,
+    "nome": "José Almeida",
+    "idade": 41,
+    "email": "jose.almeida@example.com",
+    "cpf": "444.333.222-11",
+    "data_nascimento": "1982-02-10",
+    "data_criacao": "2023-06-14T16:00:00Z"
+  },
+  {
+	"PessoaID": 8,
+    "nome": "Carla Santos",
+    "idade": 29,
+    "email": "carla.santos@example.com",
+    "cpf": "777.888.999-00",
+    "data_nascimento": "1994-07-02",
+    "data_criacao": "2023-06-13T09:30:00Z"
+  },
+  {
+	"PessoaID": 9,
+    "nome": "Fernando Pereira",
+    "idade": 36,
+    "email": "fernando.pereira@example.com",
+    "cpf": "123.789.456-00",
+    "data_nascimento": "1987-04-15",
+    "data_criacao": "2023-06-12T10:45:00Z"
+  },
+  {
+	"PessoaID": 10,
+    "nome": "Mariana Ferreira",
+    "idade": 27,
+    "email": "mariana.ferreira@example.com",
+    "cpf": "666.555.444-33",
+    "data_nascimento": "1996-08-23",
+    "data_criacao": "2023-06-11T12:00:00Z"
+  },
+  {
+	"PessoaID": 11,
+    "nome": "Lucas Oliveira",
+    "idade": 32,
+    "email": "lucas.oliveira@example.com",
+    "cpf": "777.999.222-11",
+    "data_nascimento": "1991-12-07",
+    "data_criacao": "2023-06-10T14:15:00Z"
+  },
+  {
+	"PessoaID": 12,
+    "nome": "Patrícia Souza",
+    "idade": 39,
+    "email": "patricia.souza@example.com",
+    "cpf": "444.555.666-77",
+    "data_nascimento": "1984-01-30",
+    "data_criacao": "2023-06-09T16:30:00Z"
+  },
+  {
+	"PessoaID": 13,
+    "nome": "Gustavo Lima",
+    "idade": 22,
+    "email": "gustavo.lima@example.com",
+    "cpf": "999.777.888-11",
+    "data_nascimento": "2001-10-18",
+    "data_criacao": "2023-06-08T09:45:00Z"
+  },
+  {
+	"PessoaID": 14,
+    "nome": "Amanda Costa",
+    "idade": 26,
+    "email": "amanda.costa@example.com",
+    "cpf": "111.777.888-99",
+    "data_nascimento": "1997-02-14",
+    "data_criacao": "2023-06-07T12:00:00Z"
+  },
+  {
+	"PessoaID": 15,
+    "nome": "Paulo Santos",
+    "idade": 31,
+    "email": "paulo.santos@example.com",
+    "cpf": "555.777.999-00",
+    "data_nascimento": "1992-05-25",
+    "data_criacao": "2023-06-06T14:15:00Z"
+  },
+  {
+	"PessoaID": 16,
+    "nome": "Larissa Ferreira",
+    "idade": 33,
+    "email": "larissa.ferreira@example.com",
+    "cpf": "666.999.777-11",
+    "data_nascimento": "1990-03-07",
+    "data_criacao": "2023-06-05T16:30:00Z"
+  },
+  {
+	"PessoaID": 17,
+    "nome": "Roberto Almeida",
+    "idade": 47,
+    "email": "roberto.almeida@example.com",
+    "cpf": "333.555.999-11",
+    "data_nascimento": "1976-09-21",
+    "data_criacao": "2023-06-04T09:45:00Z"
+  },
+  {
+	"PessoaID": 18,
+    "nome": "Isabela Lima",
+    "idade": 23,
+    "email": "isabela.lima@example.com",
+    "cpf": "888.999.777-11",
+    "data_nascimento": "2000-07-11",
+    "data_criacao": "2023-06-03T12:00:00Z"
+  },
+  {
+	"PessoaID": 19,
+    "nome": "Rodrigo Fernandes",
+    "idade": 38,
+    "email": "rodrigo.fernandes@example.com",
+    "cpf": "222.777.888-99",
+    "data_nascimento": "1985-11-03",
+    "data_criacao": "2023-06-02T14:15:00Z"
+  },
+  {
+	"PessoaID": 20,
+    "nome": "Samuel Cardoso Marcelino",
+    "idade": 22,
+    "email": "samuelmarcelino@uniaraxa.edu.br",
+    "cpf": "424.424.242-42",
+    "data_nascimento": "2000-07-03",
+    "data_criacao": "2000-07-03T06:18:00Z"
+  },
+  {
+	"PessoaID": 21,
+    "nome": "Guilherme Rodrigues",
+    "idade": 29,
+    "email": "guilhermerodrigues@uniaraxa.edu.br",
+    "cpf": "424.424.242-42",
+    "data_nascimento": "1994-03-01",
+    "data_criacao": "1994-03-01T04:23:00Z"
+  }
+]

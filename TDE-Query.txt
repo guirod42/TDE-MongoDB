@@ -1,0 +1,83 @@
+OPERAÇÕES DE PROJEÇÃO DOS DADOS DO BANCO TIPO MongoDB
+
+Para todas as referências, se executado em uma api, acrescentar a sintaxe 'db.collection.find({ .. })
+
+Buscar no atributo "email" todos os registros que contenham "@exemple" em alguma parte da string, e sem considerar o case sensitive, com a definição " $options: "i" "
+{ "email": { $regex: "@example", $options: "i" } }
+
+Buscar os registros onde o ID estiver entre X e Y
+{ "PessoaID": { $gte: 5, $lte: 9 } }
+
+Buscar os registros onde a Data_nascimento seja 1994
+{ "data_nascimento": { $regex: /^1994-/ } }
+
+Buscar os registros onde a Data_nascimento não seja 1994
+{ "data_nascimento": { $not: /^1994-/ } }
+
+Buscar os registros onde a Data_nascimento seja em Março
+{ "data_nascimento": { $regex: /^.*-03-/ } }
+
+Buscar os registros onde a Data_nascimento não seja em Março
+{ "data_nascimento": { $not: /^.*-03-/ } }
+
+Outros exemplos além do $regex e do $not:
+{ "idade": { $in: [20, 25, 30] } } -- Idade esteja entre os valores
+{ "idade": { $gt: 30 } } -- Idade seja maior que 30
+{ "idade": { $gte: 30 } } -- Idade seja maior ou igual a 30
+{ "idade": { $lt: 20 } } -- Idade seja menor que 30
+{ "idade": { $lte: 20 } } -- Idade seja menor ou igual a 30
+{ "email": { $exists: true } } -- Todos que possuam o atributo e-mail
+{ $and: [{ "idade": { $gt: 25 } }, { "nome": "João" }] } -- Unir dois ou mais requisitos de seleção
+
+
+https://www.mongodb.com/docs/manual/reference/operator/query/
+
+- Operadores de Comparação
+$eq - Corresponde a valores iguais a um valor especificado.
+$gt - Corresponde a valores maiores que um valor especificado.
+$gte - Corresponde a valores maiores ou iguais a um valor especificado.
+$in - Corresponde a qualquer um dos valores especificados em uma matriz.
+$lt - Corresponde a valores menores que um valor especificado.
+$lte - Corresponde a valores menores ou iguais a um valor especificado.
+$ne - Corresponde a todos os valores que não são iguais a um valor especificado.
+$nin - Não corresponde a nenhum dos valores especificados em uma matriz.
+
+- Operadores de Elementos
+$exists - Corresponde a documentos que têm o campo especificado.
+$type - Seleciona documentos se um campo for do tipo especificado.
+
+- Operadores de Avaliação
+$expr - Permite o uso de expressões de agregação dentro da linguagem de consulta.
+$jsonSchema - Valide documentos em relação ao esquema JSON fornecido.
+$mod - Executa uma operação de módulo no valor de um campo e seleciona documentos com um resultado especificado.
+$regex - Seleciona documentos em que os valores correspondem a uma expressão regular especificada.
+$text - Executa pesquisa de texto.
+$where - Corresponde a documentos que satisfazem uma expressão JavaScript.
+
+- Operadores Geoespaciais
+$geoIntersects - Seleciona geometrias que se cruzam com um GeoJSON geometria. O 2dsphere suporte de índice $geoIntersects.
+$geoWithin - Seleciona geometrias dentro de um limite Geometria GeoJSON. O 2dsphere e 2d Suporte a índices $geoWithin.
+$near - Retorna objetos geoespaciais próximos a um ponto. Requer um índice geoespacial. O 2dsphere e 2d Suporte a índices $near.
+$nearSphere - Retorna objetos geoespaciais próximos a um ponto em uma esfera. Requer um índice geoespacial. O 2dsphere e 2d Suporte a índices $nearSphere.
+
+- Operadores de Matrizes
+$all - Corresponde a matrizes que contêm todos os elementos especificados na consulta.
+$elemMatch - Seleciona documentos se o elemento no campo de matriz corresponder a todos os especificados $elemMatch Condições.
+$size - Seleciona documentos se o campo de matriz for um tamanho especificado.
+
+- Operadores de Lógica Binária (Bitwise)
+$bitsAllClear - Corresponde a valores numéricos ou binários nos quais um conjunto de posições de bits tem um valor de .0
+$bitsAllSet - Corresponde a valores numéricos ou binários nos quais um conjunto de posições de bits tem um valor de .1
+$bitsAnyClear - Corresponde a valores numéricos ou binários nos quais qualquer bit de um conjunto de posições de bits tem um valor de .0
+$bitsAnySet - Corresponde a valores numéricos ou binários nos quais qualquer bit de um conjunto de posições de bits tem um valor de .1
+
+Operadores de Projeção
+$ - Projeta o primeiro elemento em uma matriz que corresponde à condição de consulta.
+$elemMatch - Projeta o primeiro elemento em uma matriz que corresponde ao especificado $elemMatch condição.
+$meta - Projeta a pontuação do documento atribuída durante $text operação.
+$slice - Limita o número de elementos projetados de uma matriz. Suporta pular e limitar fatias.
+
+Operadores Diversos
+$comment - Adiciona um comentário a um predicado de consulta.
+$rand - Gera um float aleatório entre 0 e 1.
+

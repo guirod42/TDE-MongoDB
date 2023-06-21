@@ -1,0 +1,19 @@
+O código fornecido é um exemplo de como conectar e consultar um banco de dados MongoDB usando o Node.js com a biblioteca oficial do MongoDB para JavaScript.
+
+Vou explicar as etapas do código:
+
+    Importar o módulo MongoClient da biblioteca 'mongodb'.
+    Definir uma função assíncrona chamada run(), que irá executar a lógica de conexão e consulta.
+    Definir a URI de conexão do MongoDB. Neste caso, a URI especifica o nome de usuário ('guirodrigues'), a senha ('guirodrigues'), o nome do cluster ('tde-banco-ii.tf7srnv.mongodb.net') e o banco de dados a ser conectado.
+    Criar uma instância do MongoClient usando a URI de conexão.
+    Usar await client.connect() para conectar ao servidor MongoDB.
+    Obter uma referência ao banco de dados usando client.db('TDE-Banco'), onde 'TDE-Banco' é o nome do banco de dados.
+    Obter uma referência à coleção 'Pessoa' dentro do banco de dados usando database.collection('Pessoa').
+    Definir uma query para recuperar documentos com o campo 'PessoaID' entre 5 e 9 usando { "PessoaID": { $gte: 5, $lte: 9 } }.
+    Executar a consulta usando collection.find(query).toArray(). O método find() retorna um cursor, que pode ser convertido em um array de documentos usando toArray().
+    Iterar sobre cada documento retornado e exibir seu conteúdo usando console.log(pessoa).
+    Lidar com erros usando try-catch. Se ocorrer um erro, ele será exibido no console.
+    Finalmente, fechar a conexão com o banco de dados usando client.close().
+    Chamar a função run() e lidar com possíveis erros usando catch(console.error).
+
+Este código se conectará ao banco de dados MongoDB, acessará a coleção 'Pessoa' e recuperará os documentos que correspondem à query especificada. Em seguida, exibirá os documentos encontrados no console. Certifique-se de ter a biblioteca 'mongodb' instalada no seu projeto antes de executar esse código.
