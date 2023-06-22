@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "6493190b9117b6da8b5534ac",
+    "PessoaID": 10,
+    "nome": "Mariana Ferreira",
+    "idade": 27,
+    "email": "mariana.ferreira@example.com",
+    "cpf": "666.555.444-33",
+    "data_nascimento": "1996-08-23",
+    "data_criacao": "2023-06-11T12:00:00Z"
+  }
+]
